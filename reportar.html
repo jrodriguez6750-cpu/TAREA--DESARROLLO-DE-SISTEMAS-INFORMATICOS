@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescate | Refugio Esperanza</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="Logo Refugio Esperanza" width="100" height="100">
+        <h1>Refugio Esperanza — Sistema de Rescate y Adopción</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Rescate</a></li>
+            <li><a href="rescates.html">Casos Registrados</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Reportar un Nuevo Rescate</h2>
+            <p>Completa el siguiente formulario con la información del animal encontrado:</p>
+        </section>
+
+        <!-- ✅ Se agregó el encabezado h3 dentro de la section -->
+        <section>
+            <h3>Formulario de Reporte</h3>
+            <form action="#" method="post">
+                <label for="titulo">Nombre provisional o título del caso:</label><br>
+                <input type="text" id="titulo" name="titulo" required><br><br>
+
+                <label for="categoria">Categoría:</label><br>
+                <select id="categoria" name="categoria" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="perros">Perros</option>
+                    <option value="gatos">Gatos</option>
+                    <option value="fauna">Fauna Silvestre</option>
+                </select><br><br>
+
+                <label>Nivel de urgencia médica:</label><br>
+                <input type="radio" id="alta" name="urgencia" value="alta" required>
+                <label for="alta">Alta</label><br>
+                <input type="radio" id="media" name="urgencia" value="media">
+                <label for="media">Media</label><br>
+                <input type="radio" id="baja" name="urgencia" value="baja">
+                <label for="baja">Baja</label><br><br>
+
+                <label for="descripcion">Descripción detallada del estado y lugar donde se encontró:</label><br>
+                <textarea id="descripcion" name="descripcion" rows="6" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Enviar Reporte">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contacto: refugio.esperanza@correo.com | Teléfono: 0987654321</p>
+        <p>&copy; 2026 Refugio Esperanza — Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
